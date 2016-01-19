@@ -243,113 +243,86 @@ Vamptacus
 Our channels
 @teleseedch [English]
 ]],
-    help_text = [[
-Commands list :
+ ليست دستورات بات :
+✅!kick [username|id]
+شخص مورد نظر از گروه کيک ميشود.
+(( با ريپلاي هم ميتونيد اين کار رو انجام بدين))
 
-!kick [username|id]
-You can also do it by reply
+✅!ban [ username|id]
+شخص مورد نظر بن شده و ديگر نميتواند به گروه وارد شود
+(( با ريپلاي هم ميتونيد اين کار رو انجام بدين))
 
-!ban [ username|id]
-You can also do it by reply
+✅!unban [id]
+شخص مورد نظر از بن خارج ميشود
+(( با ريپلاي هم ميتونيد اين کار رو انجام بدين))
 
-!unban [id]
-You can also do it by reply
+✅!who
+ليست ممبر ها
 
-!who
-Members list
+✅!modlist
+ليست ادمين ها
 
-!modlist
-Moderators list
+✅!promote [username]
+شخص مورد نظر ادمين ميشود
 
-!promote [username]
-Promote someone
+✅!demote [username]
+شخص مورد نظر از ادمين بودن خارج ميشود
 
-!demote [username]
-Demote someone
+✅!kickme
+با فرستادن اين دستور از گروه کيک ميشويد
 
-!kickme
-Will kick user
+✅!about
+درباره گروه
 
-!about
-Group description
+✅!setphoto
+قرار دادن عکس و قفل کردن آن
 
-!setphoto
-Set and locks group photo
+✅!setname [name]
+تعويض نام گروه و قفل کردن آن
 
-!setname [name]
-Set group name
+✅!rules
+قوانين گروه
 
-!rules
-Group rules
+✅!id
+آيدي گروه يا شخص مورد نظر
 
-!id
-return group id or user id
+✅!help
+راهنما
 
-!help
+✅!lock [member|name|bots]
 
-!lock [member|name|bots]
-Locks [member|name|bots] 
+لاک کردن [member|name|bots]
 
-!unlock [member|name|photo|bots]
-Unlocks [member|name|photo|bots]
+✅!unlock [member|name|photo|bots]
+آنلاک کردن [member|name|photo|bots]
 
-!set rules <text>
-Set <text> as rules
+✅!set rules <text>
+انتخاب <text> براي قوانين
 
-!set about <text>
-Set <text> as about
+✅!settings
+نشان دادن تنظيمات گروه
 
-!settings
-Returns group settings
+✅!newlink
+لينک جديد
 
-!newlink
-create/revoke your group link
+✅!link
+لينک گروه
 
-!link
-returns group link
+✅!owner
+نمايش آيدي صاحب گروه
 
-!owner
-returns group owner id
+✅!stats
+آمار پيام ها
 
-!setowner [id]
-Will set id as owner
+✅!res [username]
 
-!setflood [value]
-Set [value] as flood sensitivity
+نشان دادن آيدي شخص مورد نظر
 
-!stats
-Simple message statistics
+✅!echo [ ]
+تکرار جمله
 
-!save [value] <text>
-Save <text> as [value]
-
-!get [value]
-Returns text of [value]
-
-!clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
-
-!res [username]
-returns user id
-"!res @username"
-
-!log
-will return group logs
-
-!banlist
-will return group ban list
-
-**U can use both "/" and "!" 
-
-
-*Only owner and mods can add bots in group
-
-
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only owner can use res,setowner,promote,demote and log commands
-
-]]
+✅!banlist
+ليست کساني که بن شده اند
 
   }
   serialize_to_file(config, './data/config.lua')
